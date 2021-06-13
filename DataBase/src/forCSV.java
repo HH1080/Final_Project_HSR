@@ -228,12 +228,14 @@ public class forCSV {
 	// timeTable 結構：
 	// timeTable (a JSONArray) [
 	// GeneralTimetable{GeneralTrainInfo{},StopTimes[],ServiceDay[]}]，這些是我們要的
+	
 	public static void main(String[] args) throws IOException {
 		forCSV a = new forCSV();
 
 		JSONArray timeTable = JSONUtils.getJSONArrayFromFile("/timeTable.json");
 		JSONObject seat = JSONUtils.getJSONObjectFromFile("/seat.json");
 
+		
 		BufferedWriter bw = new BufferedWriter(new FileWriter("C://NTU/table.csv"));
 
 		int Mon[] = new int[timeTable.length()];
