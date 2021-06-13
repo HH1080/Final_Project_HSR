@@ -18,7 +18,6 @@ import java.util.StringJoiner;
  */
 public class searchDB {
 
-
 	/**
 	 * @param date 日期形式如0628不用加.csv 
 	 * @param train
@@ -27,7 +26,7 @@ public class searchDB {
 	 * @param number票數
 	 * @return 座位的編號
 	 * @throws IOException
-	 */
+	 */	
 	public static String getSeatno(String date,String train, String start, String end,int number) throws IOException {
 		BufferedReader rDB = new BufferedReader(new FileReader("C://NTU/" + date + ".csv"));
 		// 找到指定train
