@@ -517,7 +517,6 @@ public class searchDB {
 	}
 	
 	
-	
 	public static void main(String[] args) throws IOException {
 		String ss=getSeatno("0612","0565", "1000 : Taipei", "1035 : Miaoli",10);
 		System.out.println(ss);
